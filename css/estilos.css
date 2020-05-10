@@ -2,6 +2,9 @@
     box-sizing: border-box;
 
 }
+html{
+    font-family: 'Lato', sans-serif;
+}
 .lateral {
     position: fixed;
     top: 0;
@@ -12,42 +15,98 @@
     background-color: #56B3AB;
 
 }
+.rs{
+    background-color: rgb(1, 10, 27);
+    height: 30px;
+    width: 60%;
+    margin: 0 auto;
 
-/*PEFIL*/
+}
+.banner{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(40, 91, 212);
+    margin: 0 auto;
+}
+
+.titulo{
+    float: left;
+    padding-left: 5px;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
 .perfil_circulo {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     overflow: hidden;
-    padding: 0;
+    margin: 0;
     
 
 }
 .perfil_logo{
-    width: 100%;
+    width: 150%;
     
 }
+
 .perfil_nombres{
     color: #ffffff;
     font-size: 20px;
     width: 250px;
     margin-left: .5em;
 }
-.perfil_circulo, .perfil_nombres{
+.perfil_nombres, .perfil_circulo{
     display: inline-block;
     vertical-align: middle;
 
 }
-/*informacion*/
+nav{
+    width: 250px;
+    height: 50px;
+    background-color: #56B3AB;
+    
+}
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size: 14px;
+}
+nav li{
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    padding: 12px 10px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+
+}
+nav li:hover{
+    background-color:#fff;
+    color: #000;
+}
+nav li>ul{
+    display: none;   
+}
+nav li:hover>ul{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+
+}
+
 .informacion{
     color: #0F6A62;
     position: absolute;
     bottom: 1em;
+    
 }
 .informacion_titulo{
     font-size: 18px;
 }
-/*habilidades*/
+
 .habilidades{
     padding: 0;
 }
@@ -58,4 +117,38 @@
     font-size: 12px;
     text-transform: uppercase;
     padding: .5em;
+}
+.habilidad--proyecto{
+    background-color: #29597C;
+    color: #ffff;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: .5em;
+}
+/*proyectos*/
+.proyectos {
+    margin-left: 350px;
+    padding: 1px;
+    display: table;
+}
+.proyecto{
+    display: table-cell;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+.proyecto_imagen{
+    width: 100%;
+    padding: 10px;
+    
+}
+.proyecto_titulo{
+    background-color: #29597C;
+    font-size: 18px;
+}
+.proyecto_descripcion{
+    color:#797D7F;
 }
